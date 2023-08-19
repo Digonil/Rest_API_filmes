@@ -4,6 +4,9 @@ namespace FilmesApiRest.Models;
 
 public class Filme
 {
+
+    public int Id { get; set; }
+
     [Required(ErrorMessage = "O título do filme é obrigatório!!!")]
     [MaxLength(100, ErrorMessage = "O tamanho máximo do título são 100 caracteres")]
     public string Titulo { get; set; }
