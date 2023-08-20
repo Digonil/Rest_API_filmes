@@ -31,3 +31,15 @@ C:\devCsharp\FilmesApiRest\obj\Debug\net7.0\refint\FilmesApiRest.dll
 C:\devCsharp\FilmesApiRest\obj\Debug\net7.0\FilmesApiRest.pdb
 C:\devCsharp\FilmesApiRest\obj\Debug\net7.0\FilmesApiRest.genruntimeconfig.cache
 C:\devCsharp\FilmesApiRest\obj\Debug\net7.0\ref\FilmesApiRest.dll
+C:\devCsharp\FilmesApiRest\bin\Debug\net7.0\Humanizer.dll
+C:\devCsharp\FilmesApiRest\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.dll
+C:\devCsharp\FilmesApiRest\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\devCsharp\FilmesApiRest\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.Design.dll
+C:\devCsharp\FilmesApiRest\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.Relational.dll
+C:\devCsharp\FilmesApiRest\bin\Debug\net7.0\Microsoft.Extensions.DependencyModel.dll
+C:\devCsharp\FilmesApiRest\bin\Debug\net7.0\Mono.TextTemplating.dll
+C:\devCsharp\FilmesApiRest\bin\Debug\net7.0\MySqlConnector.dll
+C:\devCsharp\FilmesApiRest\bin\Debug\net7.0\Pomelo.EntityFrameworkCore.MySql.dll
+C:\devCsharp\FilmesApiRest\bin\Debug\net7.0\System.CodeDom.dll
+C:\devCsharp\FilmesApiRest\bin\Debug\net7.0\AutoMapper.dll
+C:\devCsharp\FilmesApiRest\bin\Debug\net7.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll

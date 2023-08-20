@@ -1,11 +1,14 @@
 {
   "version": 2,
-  "dgSpecHash": "sEOKPcIq8LjxN4jR97Qr7WpYWp67Gd/R/FfmkAw4oUFMUttlJG+DQ7+DYfuOTIw+milLuo53yYLYR8y9s0+plQ==",
+  "dgSpecHash": "Pd3oFzB95/NbSEfphETWgxqr2vDilCbq1geUYxDJdCTIbmYS1jH4l2CynF/CUgoKxKoySTCfCsmRTC3WqitY5A==",
   "success": true,
   "projectFilePath": "C:\\devCsharp\\FilmesApiRest\\FilmesApiRest.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\diego\\.nuget\\packages\\automapper\\12.0.1\\automapper.12.0.1.nupkg.sha512",
+    "C:\\Users\\diego\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\12.0.1\\automapper.extensions.microsoft.dependencyinjection.12.0.1.nupkg.sha512",
     "C:\\Users\\diego\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
     "C:\\Users\\diego\\.nuget\\packages\\microsoft.aspnetcore.openapi\\7.0.10\\microsoft.aspnetcore.openapi.7.0.10.nupkg.sha512",
+    "C:\\Users\\diego\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
     "C:\\Users\\diego\\.nuget\\packages\\microsoft.entityframeworkcore\\7.0.10\\microsoft.entityframeworkcore.7.0.10.nupkg.sha512",
     "C:\\Users\\diego\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\7.0.10\\microsoft.entityframeworkcore.abstractions.7.0.10.nupkg.sha512",
     "C:\\Users\\diego\\.nuget\\packages\\microsoft.entityframeworkcore.analyzers\\7.0.10\\microsoft.entityframeworkcore.analyzers.7.0.10.nupkg.sha512",
