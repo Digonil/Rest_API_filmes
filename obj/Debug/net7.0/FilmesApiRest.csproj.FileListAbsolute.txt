@@ -43,3 +43,7 @@ C:\devCsharp\FilmesApiRest\bin\Debug\net7.0\Pomelo.EntityFrameworkCore.MySql.dll
 C:\devCsharp\FilmesApiRest\bin\Debug\net7.0\System.CodeDom.dll
 C:\devCsharp\FilmesApiRest\bin\Debug\net7.0\AutoMapper.dll
 C:\devCsharp\FilmesApiRest\bin\Debug\net7.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
+C:\devCsharp\FilmesApiRest\bin\Debug\net7.0\Microsoft.AspNetCore.JsonPatch.dll
+C:\devCsharp\FilmesApiRest\bin\Debug\net7.0\Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll
+C:\devCsharp\FilmesApiRest\bin\Debug\net7.0\Newtonsoft.Json.dll
+C:\devCsharp\FilmesApiRest\bin\Debug\net7.0\Newtonsoft.Json.Bson.dll

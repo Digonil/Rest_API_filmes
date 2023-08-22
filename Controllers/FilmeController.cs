@@ -2,6 +2,7 @@
 using FilmesApiRest.Data;
 using FilmesApiRest.Data.Dtos;
 using FilmesApiRest.Models;
+using Microsoft.AspNetCore.JsonPatch;
 using Microsoft.AspNetCore.Mvc;
 
 namespace FilmesApiRest.Controllers;
@@ -30,9 +31,9 @@ public class FilmeController : ControllerBase
     }
 
     [HttpGet]
-    public IEnumerable<Filme> RecuperaFilmes([FromQuery] int skip=0, [FromQuery] int take=20)
+    public IEnumerable<ReadFilmeDto> RecuperaFilmes([FromQuery] int skip=0, [FromQuery] int take=20)
     {
-        return _context.filmes.Skip(skip).Take(take);
+        return _mapper.Map<List<ReadFilmeDto>>(_context.filmes.Skip(skip).Take(take));
     }
 
     [HttpGet("{id}")]
@@ -43,7 +44,49 @@ public class FilmeController : ControllerBase
         {
             return NotFound();
         }
-        return Ok(filme);
+
+        var filmeDto = _mapper.Map<ReadFilmeDto>(filme);
+        return Ok(filmeDto);
 
     }
+
+    [HttpPut("{id}")]
+    public IActionResult AtualizaFilme([FromBody] UpdateFilmeDto filmeDto , int id) 
+    {
+        var filme = _context.filmes.FirstOrDefault(filme => filme.Id == id);
+        if(filme == null) return NotFound();
+        _mapper.Map(filmeDto, filme);
+        _context.SaveChanges();
+        return NoContent();
+    }
+
+    [HttpPatch("{id}")]
+    public IActionResult AtualizaFilmeParcial(JsonPatchDocument<UpdateFilmeDto> patch, int id)
+    {
+        var filme = _context.filmes.FirstOrDefault(filme => filme.Id == id);
+        if (filme == null) return NotFound();
+
+        var filmeParaAtualizar = _mapper.Map<UpdateFilmeDto>(filme);
+
+        patch.ApplyTo(filmeParaAtualizar, ModelState);
+
+        if (!TryValidateModel(filmeParaAtualizar))
+        {
+            return ValidationProblem(ModelState);
+        }
+        _mapper.Map(filmeParaAtualizar, filme);
+        _context.SaveChanges();
+        return NoContent();
+    }
+
+    [HttpDelete("{id}")]
+    public IActionResult DeletaFilme(int id)
+    {
+        var filme = _context.filmes.FirstOrDefault(filme => filme.Id == id);
+        if (filme == null) return NotFound();
+        _context.filmes.Remove(filme);
+        _context.SaveChanges();
+        return NoContent();
+    }
 }
+
