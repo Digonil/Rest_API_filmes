@@ -15,14 +15,13 @@ builder.Services.AddDbContext<FilmeContext>(opts =>
 //Add Automapper on the project
 builder.Services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
 
-// Add services to the container
-//builder.Services.AddControllers();
-
 // Add services to the container (Adicionado posteriormente o Newtonsoft Json para mudanças parciais no json).
 builder.Services.AddControllers().AddNewtonsoftJson();
 
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
+
+//Adiciona o Swagger ao projeto
 builder.Services.AddSwaggerGen(c =>
 {
     c.SwaggerDoc("v1", new OpenApiInfo { Title = "FilmesAPI", Version = "v1" });
