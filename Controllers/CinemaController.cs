@@ -6,6 +6,8 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace FilmesApiRest.Controllers;
 
+[ApiController]
+[Route("[controller]")]
 public class CinemaController : ControllerBase
 {
     private FilmeContext _context;
