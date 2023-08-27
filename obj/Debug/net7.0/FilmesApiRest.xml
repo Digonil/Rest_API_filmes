@@ -64,5 +64,41 @@
         <member name="M:FilmesApiRest.Migrations.SessaoeCinema.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)">
             <inheritdoc />
         </member>
+        <member name="T:FilmesApiRest.Migrations.FilmeIdNulo">
+            <inheritdoc />
+        </member>
+        <member name="M:FilmesApiRest.Migrations.FilmeIdNulo.Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:FilmesApiRest.Migrations.FilmeIdNulo.Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:FilmesApiRest.Migrations.FilmeIdNulo.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="T:FilmesApiRest.Migrations.CinemaeFilme">
+            <inheritdoc />
+        </member>
+        <member name="M:FilmesApiRest.Migrations.CinemaeFilme.Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:FilmesApiRest.Migrations.CinemaeFilme.Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:FilmesApiRest.Migrations.CinemaeFilme.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="T:FilmesApiRest.Migrations.DeleteRestrict">
+            <inheritdoc />
+        </member>
+        <member name="M:FilmesApiRest.Migrations.DeleteRestrict.Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:FilmesApiRest.Migrations.DeleteRestrict.Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:FilmesApiRest.Migrations.DeleteRestrict.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)">
+            <inheritdoc />
+        </member>
     </members>
 </doc>
