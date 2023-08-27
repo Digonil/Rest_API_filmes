@@ -2,6 +2,7 @@
 using FilmesApiRest.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -9,16 +10,15 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace FilmesApiRest.Migrations
 {
     [DbContext(typeof(FilmeContext))]
-    partial class FilmeContextModelSnapshot : ModelSnapshot
+    [Migration("20230826145838_Cinema e Endereco")]
+    partial class CinemaeEndereco
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
                 .HasAnnotation("ProductVersion", "7.0.10")
-                .HasAnnotation("Proxies:ChangeTracking", false)
-                .HasAnnotation("Proxies:CheckEquality", false)
-                .HasAnnotation("Proxies:LazyLoading", true)
                 .HasAnnotation("Relational:MaxIdentifierLength", 64);
 
             modelBuilder.Entity("FilmesApiRest.Models.Cinema", b =>
@@ -88,18 +88,18 @@ namespace FilmesApiRest.Migrations
 
             modelBuilder.Entity("FilmesApiRest.Models.Cinema", b =>
                 {
-                    b.HasOne("FilmesApiRest.Models.Endereco", "Endereco")
-                        .WithOne("Cinema")
+                    b.HasOne("FilmesApiRest.Models.Endereco", "endereco")
+                        .WithOne("cinema")
                         .HasForeignKey("FilmesApiRest.Models.Cinema", "EnderecoId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.Navigation("Endereco");
+                    b.Navigation("endereco");
                 });
 
             modelBuilder.Entity("FilmesApiRest.Models.Endereco", b =>
                 {
-                    b.Navigation("Cinema")
+                    b.Navigation("cinema")
                         .IsRequired();
                 });
 #pragma warning restore 612, 618

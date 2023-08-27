@@ -49,3 +49,5 @@ C:\devCsharp\FilmesApiRest\bin\Debug\net7.0\Newtonsoft.Json.dll
 C:\devCsharp\FilmesApiRest\bin\Debug\net7.0\Newtonsoft.Json.Bson.dll
 C:\devCsharp\FilmesApiRest\bin\Debug\net7.0\FilmesApiRest.xml
 C:\devCsharp\FilmesApiRest\obj\Debug\net7.0\FilmesApiRest.xml
+C:\devCsharp\FilmesApiRest\bin\Debug\net7.0\Castle.Core.dll
+C:\devCsharp\FilmesApiRest\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.Proxies.dll
