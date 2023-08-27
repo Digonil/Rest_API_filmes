@@ -26,7 +26,7 @@ public class SessaoController : ControllerBase
         return _mapper.Map<List<ReadSessaoDto>>(_context.sessoes.ToList());
     }
 
-    [HttpGet("{id")]
+    [HttpGet("{id}")]
     public IActionResult ListarSessoesPoriD(int id)
     {
         var sessao = _context.sessoes.FirstOrDefault(sessao => sessao.Id == id);

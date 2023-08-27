@@ -40,5 +40,29 @@
         <member name="M:FilmesApiRest.Migrations.UpdateEnderecoeCinema.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)">
             <inheritdoc />
         </member>
+        <member name="T:FilmesApiRest.Migrations.Sessaoefilme">
+            <inheritdoc />
+        </member>
+        <member name="M:FilmesApiRest.Migrations.Sessaoefilme.Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:FilmesApiRest.Migrations.Sessaoefilme.Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:FilmesApiRest.Migrations.Sessaoefilme.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="T:FilmesApiRest.Migrations.SessaoeCinema">
+            <inheritdoc />
+        </member>
+        <member name="M:FilmesApiRest.Migrations.SessaoeCinema.Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:FilmesApiRest.Migrations.SessaoeCinema.Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:FilmesApiRest.Migrations.SessaoeCinema.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)">
+            <inheritdoc />
+        </member>
     </members>
 </doc>
